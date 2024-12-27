@@ -23,8 +23,8 @@ This project is an Uber Clone application that includes both a backend and front
 1. **Clone the repository**:
 
    ```bash
-   git clone <your-repository-url>
-   cd <your-project-directory>
+   git clone <repository-url>
+   cd <project-directory>
 
 2. **Install backend dependencies**:
 

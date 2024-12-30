@@ -126,15 +126,3 @@ Captains will receive booking requests from users and can accept or reject them.
 - Google Maps API Key: Make sure you have a valid API key set in both backend and frontend .env files.
 - Port Conflicts: If any port is already in use, you may need to change the PORT variable in the .env files for both frontend and backend.
 
-
-
-
-
-![Screenshot (446)](https://github.com/user-attachments/assets/ab20cd27-e19f-4c08-a3e1-eae5ce16d909)
-
-
-
-![Screenshot (447)](https://github.com/user-attachments/assets/ee374598-498e-49f2-abfa-ed7419f308c6)
-
-![Screenshot (448)](https://github.com/user-attachments/assets/6964cae5-f30d-4984-98a5-eac90e7c0690)
-![Screenshot (449)](https://github.com/user-attachments/assets/9a080f9f-a0f4-4346-b906-f758716eede3)

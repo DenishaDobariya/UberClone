@@ -16,6 +16,12 @@ This project is an Uber Clone application that includes both a backend and front
   - Nodemon (for automatic backend server restarts)
   - Vite (for frontend development server)
 
+## Note
+
+- firstname and lastname must be at least 3 characters long. ex:- John doee
+- email must be at least 5 characters long.ex:- johndoee@gmail.com
+- password must be at least 6 characters long. ex:-johndoee107##
+
 ## Installation
 
 ## Backend Setup

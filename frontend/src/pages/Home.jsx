@@ -45,8 +45,6 @@ const Home = () => {
     }, [ user ])
 
     socket.on('ride-confirmed', ride => {
-
-
         setVehicleFound(false)
         setWaitingForDriver(true)
         setRide(ride)
@@ -58,7 +56,6 @@ const Home = () => {
         navigate('/riding', { state: { ride } }) 
     })
 
-
     const handlePickupChange = async (e) => {
         setPickup(e.target.value)
         try {
@@ -67,7 +64,6 @@ const Home = () => {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
                 }
-
             })
             setPickupSuggestions(response.data)
         } catch {
@@ -176,8 +172,6 @@ const Home = () => {
         })
 
         setFare(response.data)
-
-
     }
 
     async function createRide() {

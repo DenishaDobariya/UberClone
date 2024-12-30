@@ -32,8 +32,6 @@ module.exports.getDistanceTime = async (origin, destination) => {
     const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${encodeURIComponent(origin)}&destinations=${encodeURIComponent(destination)}&key=${apiKey}`;
 
     try {
-
-
         const response = await axios.get(url);
         if (response.data.status === 'OK') {
 
@@ -74,10 +72,6 @@ module.exports.getAutoCompleteSuggestions = async (input) => {
 }
 
 module.exports.getCaptainsInTheRadius = async (ltd, lng, radius) => {
-
-    // radius in km
-
-
     const captains = await captainModel.find({
         location: {
             $geoWithin: {
@@ -87,6 +81,4 @@ module.exports.getCaptainsInTheRadius = async (ltd, lng, radius) => {
     });
 
     return captains;
-
-
 }

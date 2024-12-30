@@ -30,12 +30,7 @@ module.exports.registerUser = async (req, res, next) => {
     const token = user.generateAuthToken();
 
     res.status(201).json({
-        token,
-        user: {
-            _id: user._id,
-            email: user.email,
-            fullname: `${user.fullname.firstname} ${user.fullname.lastname}`, 
-        }
+        token
     });
 
 }

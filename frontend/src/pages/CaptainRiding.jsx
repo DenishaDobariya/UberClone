@@ -24,7 +24,6 @@ const CaptainRiding = () => {
         }
     }, [ finishRidePanel ])
 
-
     return (
         <div className='h-screen relative flex flex-col justify-end'>
 

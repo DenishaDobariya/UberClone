@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+require('dotenv').config();
 
 const rideSchema = new mongoose.Schema({
     user: {
@@ -23,21 +23,17 @@ const rideSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-
     status: {
         type: String,
         enum: [ 'pending', 'accepted', "ongoing", 'completed', 'cancelled' ],
         default: 'pending',
     },
-
     duration: {
         type: Number,
-    }, // in seconds
-
+    }, 
     distance: {
         type: Number,
-    }, // in meters
-
+    }, 
     paymentID: {
         type: String,
     },
@@ -47,7 +43,6 @@ const rideSchema = new mongoose.Schema({
     signature: {
         type: String,
     },
-
     otp: {
         type: String,
         select: false,

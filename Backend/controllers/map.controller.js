@@ -1,13 +1,11 @@
 const mapService = require('../services/maps.service');
 const { validationResult } = require('express-validator');
 
-
 module.exports.getCoordinates = async (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
     }
-
 
     const { address } = req.query;
 
@@ -20,7 +18,6 @@ module.exports.getCoordinates = async (req, res, next) => {
 }
 
 module.exports.getDistanceTime = async (req, res, next) => {
-
     try {
 
         const errors = validationResult(req);
@@ -41,7 +38,6 @@ module.exports.getDistanceTime = async (req, res, next) => {
 }
 
 module.exports.getAutoCompleteSuggestions = async (req, res, next) => {
-
     try {
 
         const errors = validationResult(req);

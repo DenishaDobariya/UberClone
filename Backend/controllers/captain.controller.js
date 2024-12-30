@@ -3,7 +3,6 @@ const captainService = require('../services/captain.service');
 const blackListTokenModel = require('../models/blacklistToken.model');
 const { validationResult } = require('express-validator');
 
-
 module.exports.registerCaptain = async (req, res, next) => {
 
     const errors = validationResult(req);
@@ -18,7 +17,6 @@ module.exports.registerCaptain = async (req, res, next) => {
     if (isCaptainAlreadyExist) {
         return res.status(400).json({ message: 'Captain already exist' });
     }
-
 
     const hashedPassword = await captainModel.hashPassword(password);
 

@@ -23,6 +23,4 @@ router.get('/get-suggestions',
     mapController.getAutoCompleteSuggestions
 )
 
-
-
 module.exports = router;

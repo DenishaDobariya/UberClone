@@ -25,9 +25,8 @@ const ConfirmRidePopUp = (props) => {
             props.setRidePopupPanel(false)
             navigate('/captain-riding', { state: { ride: props.ride } })
         }
-
-
     }
+
     return (
         <div>
             <h5 className='p-1 text-center w-[93%] absolute top-0' onClick={() => {

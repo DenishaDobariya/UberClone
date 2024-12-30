@@ -15,7 +15,6 @@ const LiveTracking = () => {
     const [currentPosition, setCurrentPosition] = useState(center);
 
     useEffect(() => {
-        // Function to update position
         const updatePosition = (position) => {
             const { latitude, longitude } = position.coords;
             setCurrentPosition({

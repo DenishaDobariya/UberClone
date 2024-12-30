@@ -17,12 +17,12 @@ This project is an Uber Clone application that includes both a backend and front
   - Vite (for frontend development server)
 
 ## Note
-# user Signup
+## user Signup
 - firstname and lastname must be at least 3 characters long. ex:- Demo User
 - email must be at least 5 characters long.ex:- demo@gmail.com
 - password must be at least 6 characters long. ex:-demo100##
 
-# captain Signup
+## captain Signup
 - firstname and lastname must be at least 3 characters long. ex:- Captain Demo
 - color and plate must be at least 3 characters long. ex:- black, SCH 8RV ED
 
